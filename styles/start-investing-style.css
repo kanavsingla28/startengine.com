@@ -10,6 +10,7 @@
 .all-tombstones > div{
     height: 400px;
     background-color: white;
+    cursor: pointer;
 }
 .discover-wrap{
     width: 90%;
