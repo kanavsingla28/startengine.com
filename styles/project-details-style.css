@@ -1,0 +1,132 @@
+
+.title {
+    min-height: 30px;
+    font-family: 'Lato';
+    font-size: 34px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.88;
+    letter-spacing: -1.1px;
+    color: #03120b;
+    margin-bottom: 0;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    height: 10px;
+}
+.name-details-categories{
+    margin: 30px;
+}
+.stats-and-video{
+    display: flex;
+    gap: 5%;
+    height: 10%;
+}
+.image-div{
+    width:65%;
+}
+.details-div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.offering-stats{
+    display: flex;
+    flex-direction: column;
+}
+.offering-stats>div{
+    display: flex;
+    justify-content: space-between;
+}
+.offering-stats h2 {
+    font-family: 'Roboto';
+    margin-top: 0;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 29px;
+}
+.offering-stats h5 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    color: #03120b;
+    margin: 5px 0 0 0;
+}
+.offering-stats h6 {
+    font-family: 'Roboto';
+    margin: 4px 0 18px 0;
+    font-size: 15px;
+    color: rgba(3, 18, 11, 0.6);
+}
+.invest-or-reserve{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.row > div{
+    width: 50%;
+}
+.video-mobile {
+    background-position: center;
+    padding-bottom: 58.25%;
+    margin-bottom: 0;
+    box-shadow: none;
+    position: relative;
+}
+.gce-original-image{
+    background-position:top;
+    background-size: contain;
+    border-radius: 1%;
+}
+
+.categories {
+    background: #f6f6f6;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.site-location {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex: none;
+    margin-right: 6px;
+}
+.project-category {
+    background: #f7f7f7;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    color: #676767;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 7px 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.elevator-pitch {
+    color: rgba(3, 18, 11, 0.6);
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.1px;
+    line-height: 1.88;
+    min-height: 0;
+    padding-top: 24px;
+}
+.stats-and-video .banner-text {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: rgba(3, 18, 11, 0.6);
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+    margin: 16px;
+}
