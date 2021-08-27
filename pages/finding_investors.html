@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding form page</title>
+    <link rel="stylesheet" href="./../styles/css_funding.css">
+    <style>
+        .main{
+            margin: auto;
+         
+            max-width: 700px;
+        }
+        .d1
+        {
+            float: left;
+            padding-right:0px;
+
+        
+        }
+         .d2{
+            float: right;
+            padding-right:0px;
+
+        }
+        .d{
+            padding:40px;
+            
+        }
+        #g{
+            height: 30px;
+            width:100%;
+            
+
+        }
+        #corp{
+            height: 30px;
+            width:100%;
+        }
+        
+        .top{
+            text-align: center;
+            font-size: 40px;
+        }
+        .box{
+           
+            width:250px;
+            min-height: 27px;
+            background-color:#f5f8fa;
+            border: 1px solid #cbd6e2;
+        }
+        #btn{
+            height:40px;
+            width:100px;
+            background-color:#2ec07a;
+            border:#2ec07a 2px solid ;
+            align-self: auto;
+            color: white;
+            font-size: large;
+        }
+        #text{
+            width:100%;
+            height: 50px;
+        }
+        .m{
+            margin:auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .color{
+           color: #2ec07a;
+        }
+           .special_image{
+            
+           min-width:200px;
+           min-height:400px;
+           margin-top:170%;
+             background-size: contain;
+             background-repeat: no-repeat;
+             background-image: url("https://mk0blogstarteng8gb57.kinstacdn.com/wp-content/uploads/2019/04/Person-1.svg");
+           }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="m">
+      <section class="main">
+        <div class="top">
+            <h1>Let's begin the path to</br>
+           <span class="color">Finding Investors</span> </h1>
+           
+        </div>
+      
+            
+            <form onsubmit="submission(event)">
+                <h3>To get started, tell us a little about your company:</h3>
+                <div class="d">
+                   
+                <div class="d1">
+                   
+                    <label>First name</label>
+                </br>
+                <input type="text" class="box" required/>
+            </br>
+            <label>Company name</label>
+              </br>
+          <input type="text" class="box"  required/>
+            </br>
+            <label>Phone number</label>
+        </br>
+          <input type="text" class="box"  required/>
+                </div>
+                  
+                   
+                           
+                
+                <div class="d2">
+                    <label>Last name</label>
+                </br>
+                <input type="text" class="box"  required/>
+            </br>
+            <label>Email</label>
+        </br>
+                    <input type="text" class="box"  required/>
+           </br> 
+           <label>Website URL</label>
+        </br>
+        <input type="text" class="box"  required>
+    </br>
+                    
+                </div>
+            </div>
+            <div class="d"></br></br></div>
+            <div class="d">
+                
+                    <label>How much have you previously raised?</label>
+                </br>
+                    <select name="money" id="g" class="box" >
+                        <option value="">Please Select</option>
+                        <option value="none">$0</option>
+                        <option value="1">Upto $100K</option>
+                        <option value="2">$100k-$500k</option>
+                        <option value="3">$500k-$1M</option>
+                        <option value="4">$1M-$5M</option>
+                        <option value="5">$5M-$10M</option>
+                        <option value="6">$10M+</option>
+                    </select>
+                    
+                    </br>
+                <label>How are you incorporated?</label>
+                </br>
+                <select name="corp" id="corp"  class="box" >
+                 <option value="">Please Select</option>
+                  <option value="c">C-Corp</option>
+                  <option value="s">S-Corp</option>
+                  <option value="sp">Sole Properiter</option>
+                  <option value="llc">LLC</option>
+                  <option value="nc">Not Incorporated</option>
+                  <option value="ltd">LTD</option>
+                  <option value="np">Non Profit</option>
+                  <option value="o">Others</option>
+                </select>
+            </br>
+                    <label>Please tell us about your company, including 3 reasons investors would love to invest:</label>
+                </br>
+                <textarea id="text" name="text" class="box" required></textarea> 
+            </br>
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename"  required/>
+            </br>
+        </div>
+        <div class="top">
+                <input type="submit"  id="btn" placeholder="Next Step">
+             </div>
+              
+            </form>
+    
+    </section>
+    <section >
+        <div class="special_image">
+           
+
+        </div>
+    </section>
+</div>
+    <script>
+        function submission(event){
+           event.preventDefault();
+            window.location.replace("./../pages/thansk.html");
+        }
+    </script>
+
+  <!--
+    <section  >
+ <div class="main">
+   <img src="https://mk0blogstarteng8gb57.kinstacdn.com/wp-content/uploads/2019/04/Person-1.svg"/>
+ </div>
+
+    </section>
+    ---> 
+</body>
+</html>
