@@ -1,0 +1,142 @@
+.main-div{
+    margin: 5%;
+    height: 100vh;
+}
+#content-wrap{
+    display: flex;
+    padding: 10%;
+    height: 80%;
+    margin-top: 10%;
+}
+.MuiGrid-left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.MuiGrid-left p{
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0%;
+}
+.sign-in-options, .form-div{
+    display: flex;
+    flex-direction: column;
+}
+.form-div{
+    width: 40%;
+}
+.firebaseui-idp-icon {
+    height: 18px;
+    width: 18px;
+}
+.only-line{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;;
+    height: 1px;
+    margin-top: 9px;
+    width: 100%;
+}
+.forgot-signin + .only-line{
+    margin: 8% 0%;
+    border:none
+}
+.or-div, .forgot-signin{
+    display: flex;
+
+}
+.or-text{
+    width: 20%;
+    padding: 0% 5%;
+    text-align: center;
+    color: grey;
+}
+input{
+    display: block;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding: 1%;
+    margin: 7% 0%;
+    font-size: 14px;
+    color: currentColor;
+}
+.forgot-signin{
+    justify-content: space-between;
+}
+.forgot-signin > div{
+    width: 50%;
+}
+.MuiGrid-left img {
+    height: 230px;
+    width: 60%;
+    /* aspect-ratio: auto 330 / 200;
+    width: 330px; */
+}
+.google-btn{
+    background-color: white;
+    color: #757575;
+    text-transform: none;
+
+}
+.fb-btn{
+    background-color: #3b5998;
+}
+.apple-btn{
+    background-color: black;
+}
+.firebaseui-idp-favicon{
+    margin:6px
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3%;
+    height: 40px;
+    border:none;
+    font-size: 90%;
+    font-weight: 500;
+    color: white;
+    /* background: hsla(0,0%,62%,.2); */
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+button img{
+    margin: 0px 15px;
+}
+a{
+    color: rgb(32, 193, 120);
+    text-decoration: none;
+}
+.sign-up-form-fill-text{
+    font-size: 15px !important;
+}
+.forgot-signup{
+    width: 100%;
+}
+.login-account-div{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+@media only screen and (max-width:850px) {
+    #content-wrap{
+        flex-direction: column;
+        min-width: 350px;
+    }
+    .form-div, .MuiGrid-left{
+        width: 90%;
+        margin: auto;
+    }
+    .MuiGrid-left p {
+        font-size: 28px;
+        text-align: center;
+    }
+    .MuiGrid-left img{
+        width: 100%;
+    }
+}
