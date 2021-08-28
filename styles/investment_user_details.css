@@ -1,0 +1,249 @@
+body{
+    font-family: "Open Sans";
+}
+
+.investment_user_heading{
+    max-width:100%;
+    text-align: center;
+    height: 200px;
+    margin:5% 5%;
+    
+  
+}
+
+#investment_company_logo{
+    width:100px;
+    margin:3.5%;
+    float: left;
+    height: 100px;
+   
+   
+}
+#investment_company_div
+{color:#000000DE;
+    height: 100px;
+    margin:3.5% 2% 3.5% 0;
+    width:80%;
+   
+     float: right;
+    font-size: 48px;
+    box-sizing: border-box;
+   
+}
+#investment_company_div h3{
+    margin: 0%;
+  
+    font-weight: 400;
+    text-align: left;
+}
+#investment_company_div >h3 > span{
+  
+    font-weight: 700;
+     text-align: left;
+     margin:0;
+     
+}
+#investment_company_div >#investment_electric_logo{
+    margin-left:60px;
+    margin-top: -9px;
+    height:30px;
+    width:30px;
+    
+    float: left;
+}
+#investment_company_div >img{
+  margin:0%;
+    float:left;
+}
+#investment_company_div >p{
+    margin-top:-4px;
+    margin-left: 10px; 
+    display: inline;
+    font-size:16px;
+    float:left;
+    font-weight: 700;
+}
+
+
+.investment_user_details{
+    box-sizing: border-box;
+    float:left;
+    width:50%;
+    margin:5%;
+    height: auto;
+ 
+}
+.font_heading{
+    font-family: "Open Sans";
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24.5001px;
+    color:  #1E1E1E;
+    margin-left: 50px;
+}
+.Investment_Line{
+    margin-top: 100px;
+    border-bottom: 2px solid lightgray;
+}
+
+button{
+    font-family: "Open Sans", Lato, "Open Sans";
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+    text-decoration: none solid rgb(249, 249, 249);
+    text-align: center;
+    word-spacing: 0px;
+    background-color:  #2EC07A;
+    height: 50px;
+    width: 140.837px;
+    border: 2px double  #2EC07A;
+    padding: 15px 10px 20px 10px;
+    border-radius:4px;
+    margin:20px 90px 0 300px;
+    
+    color: white;
+    font-weight: bold;
+    float: right;
+}
+
+.investment_user_details .heading1{
+margin-top: 100px;
+}
+#investment_amt_form{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin:0 10% 0 10%;
+}
+.investment_user_details #investment_data_divs{
+    display: flex;
+    width:197px;
+    padding-left: 10%;
+    font-size: 14px;
+    
+}
+#investment_data_divs >div{
+    margin:5%;                        
+    min-width: 110px;
+    max-width: 110px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid gainsboro;
+    
+}
+#investment_data_divs > div>p{
+    text-align: center;
+    
+}
+.investment_data{
+    font-size: 18px;
+    font-weight: bold;
+}
+#investment_data_divs > div> .investment_text{
+    font-weight: 100;
+}
+
+
+.investment_user_details .heading2{margin-top: 100px;}
+
+
+#investment_contact_info_form{
+    width:80%;
+    margin:0 10% 0 10%;
+}
+
+#investment_contact_info_form>#input_fname{
+    width:40%;
+}
+#investment_contact_info_form>#input_lname{
+    width:40%;
+}
+#investment_contact_info_form>#select_country{
+    height: 22px;
+    width:499px;
+    font-size: 19px;
+    padding:19px 14px 19px 14px;
+}
+#investment_form_float{
+    display:float;
+}
+#investment_form_float input{
+    width:22%;
+     margin-right:3%;
+}
+#investment_form_float label{
+    
+     margin-right:23%;
+     
+}
+
+.investment_user_details .heading3{margin-top: 100px;}
+
+#payment_form{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin:0 10% 0 10%;
+}
+form input{
+    height: 18px;
+    width:469px;
+    font-size: 19px;
+    padding:19px 14px 19px 14px;
+}
+ form label{
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+    color: darkslategrey;
+    margin-top:30px;
+}
+
+
+
+.investment_image_logo_bank{
+    display:flex;
+   
+}
+.investment_image_logo_bank img{max-width:70px;}
+.investment_user_details .heading4{margin-top: 100px;}
+.investment_user_details .heading5{margin-top: 100px;}
+
+
+.investment_user_bonus{
+    float:right;
+    width:25%;
+    margin:5%;
+    height: 1600px;
+    border:2px solid gainsboro;    
+}
+.investment_user_bonus> .box{
+    margin:50px;
+    max-width:300px; border:2px solid lightgray;   
+}
+.investment_user_bonus> .box> .investment_offer{
+    font-weight: 550;
+}
+.investment_user_bonus> .box>.inve{
+   margin:0; 
+   padding: 0;
+    font-weight: 400;
+}
+.investment_user_bonus> .box >.inve_val{
+    margin-bottom: 0;
+}
+#select_payment_method{
+    max-height: 57px;
+    width:499px;
+    font-size: 18px;
+    padding:19px 14px 19px 14px;
+}
+#Bonus_rewards{
+    margin-left:20px;
+    margin-bottom: 0;
+}
+#investment_p{
+    margin-left:20px;
+    margin-top:8px;
+}

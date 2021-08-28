@@ -29,11 +29,13 @@
           <img id="nav_logo_img" src="./images/StartEngine_nav_logo.png"></div>
         </a>
         <div id="nav_ele">
-            <a id="nav_anchor_Signin"src="">Sign In</a>
-            <a id="nav_anchor_getfunding">Get Funding</a>
-            <a id="nav_anchor_fill_startinvesting"><span>Start Investing</span></a>
+            <a id="nav_anchor_Signin" onclick="showdropdown()" href="./pages/login.html">Sign In</a>
+            <a id="nav_anchor_getfunding" href="./pages/getfunding.html">Get Funding</a>
+            <a id="nav_anchor_fill_startinvesting" href="./pages/start-investing.html"><span>Start Investing</span></a>
         </div>
     </nav>
+    <div class="index_nav_drop classnone"><p>Hello,<span id="drop_username">username</span> </p>
+           <p onclick="signout()">Sign Out</p></div>
 
     <!-- element -wrap below navigation bar -->
     <div id="index_element_wrap_front_div">
@@ -66,8 +68,8 @@
     </div>
 
 
-
-    <!-- Div heading Now Trading  -->
+<!-- 
+     Div heading Now Trading  
     <h2 id="index_heading_for_container_wrap">Now Trading</h2>
     <h2 id="index_heading_for_container_wrap">Signed To Trade On StartEngine’s Secondary Market</h2>
     <h2 id="index_heading_for_container_wrap">Most Momentum</h2>
@@ -75,8 +77,8 @@
     <h2 id="index_heading_for_container_wrap">New</h2>
     <h2 id="index_heading_for_container_wrap">Closing Soon</h2>
    <button id="index_btn_see_all_companies"><span>See All Companies</span></button>
-     
-   <section id="index_cont_enter_email_section">
+      
+ -->   <section id="index_cont_enter_email_section">
        <p><span>Be the first </span>to hear about our investment opportunities when they launch.</p>   
        
        

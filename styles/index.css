@@ -24,7 +24,7 @@ body {
      position: sticky;
      top:0;
      box-sizing: border-box;
-    
+    overflow: hidden;
      display: flex;
  }
  #nav_logo_img{
@@ -33,7 +33,7 @@ body {
     margin-left:3%;
  }
 #nav_ele{
-   font-family:"Lato" Lato "Open Sans";
+   font-family:"Lato", Lato, "Open Sans";
    font-size: 15px;
    height: 60px;
    width:90%;
@@ -43,12 +43,13 @@ body {
 
 }
 #nav_anchor_fill_startinvesting{
-    font-family: "Lato" Lato "Open Sans";                  
+    font-family: "Lato", Lato, "Open Sans";                  
    background-color:   #20C178;  
    border: 2px solid  #20C178;
    margin: 0 1.5% 1% 1.5%;
    padding: 1% 2.7% 1% 2.7%;
    border-radius: 3px;
+   text-decoration: none ;
    
    float:right;
    
@@ -59,20 +60,47 @@ body {
     
 }
 #nav_anchor_getfunding
-   {
-    font-family: "Lato" Lato "Open Sans";
+   { color:#212529;
+    font-family: "Lato", Lato, "Open Sans";
     margin: 0 1.5% 1% 1.5%;
     padding: 1% 2.7% 1% 2.7%;
+    text-decoration: none ;
     border: 2px solid  #20C178;
     border-radius: 3px;
     float:right;
 }
 #nav_anchor_Signin{
-    font-family: "Lato" Lato "Open Sans";
+    font-family: "Lato", Lato, "Open Sans";
+    color:#212529; 
+    text-decoration: none ;
     margin: 0 1.5% 1% 1.5%;
    padding: 1% 2.7% 1% 2.7%;
     float:right;
+    
+    
 }
+
+.classdisplay{
+    display: block;
+}
+
+.index_nav_drop{
+    position: sticky;
+    width:300px;
+    top:69px;
+    float:right;
+    background-color: #fff;
+    color: #313647;
+    font-family: "Lato",Lato,"Open Sans";
+    font-size: 16px;
+    display: none;
+    
+}
+.index_nav_drop> p> a{
+    text-decoration: none;
+}
+
+
 #index_element_wrap_front_div{
     
     min-height: 538.438px;
@@ -300,12 +328,14 @@ font-size: 15px;
  background-color: #2EC07A;
  border: 1px solid #2EC07A;
  border-radius: 3px;
-}
-input[type="email"]:not(:placeholder-shown):invalid{
+} 
+input[type="email"]:invalid{
     color:red;
+} 
+/* input[type="email" i] {
+    padding: 1px 2px;
 }
-
-#index_cont_wrap_be_a_shark{
+ */#index_cont_wrap_be_a_shark{
     min-height: 470px;
     min-width:100%; 
     margin-top: 100px;                                   
