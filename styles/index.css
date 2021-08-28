@@ -12,7 +12,26 @@ body {
 
 
 /* -------After login  CSS end------------------------ */
+a:hover{
+    color:#2EC07A;
+}
+button[type="submit"]:hover{
+    background-color: #19955D;
+}
 
+#index_top_banner{
+    width:100%;
+    height: 60px;
+    background-color: #2EC07A;
+}
+#index_top_banner>p{
+    color:#FFFFFF;
+    font-size:18px;
+    font-family:"Lato", Lato, "Open Sans";
+    margin:auto;
+       padding-top: 10px;
+    text-align: center;
+}
 
  #nav_cont{
      padding:12px 1.5% 1.5% 20px;
@@ -42,7 +61,7 @@ body {
    
 
 }
-#nav_anchor_fill_startinvesting{
+#nav_anchor_fill_startinvesting {
     font-family: "Lato", Lato, "Open Sans";                  
    background-color:   #20C178;  
    border: 2px solid  #20C178;
@@ -55,7 +74,12 @@ body {
    
 
    
-}#nav_anchor_fill_startinvesting span{
+}
+#nav_anchor_fill_startinvesting:hover{
+    background-color: #19955D;
+}
+
+#nav_anchor_fill_startinvesting span{
     color:white;
     
 }
@@ -69,6 +93,10 @@ body {
     border-radius: 3px;
     float:right;
 }
+#nav_anchor_getfunding:hover{
+    color: #19955D;
+}
+
 #nav_anchor_Signin{
     font-family: "Lato", Lato, "Open Sans";
     color:#212529; 
@@ -80,8 +108,16 @@ body {
     
 }
 
-.classdisplay{
+.classdisplay{      /* display block */
     display: block;
+    position: sticky;
+    width:300px;
+    top:69px;
+    float:right;
+    background-color: #fff;
+    color: #313647;
+    font-family: "Lato",Lato,"Open Sans";
+    font-size: 16px;
 }
 
 .index_nav_drop{
@@ -93,7 +129,7 @@ body {
     color: #313647;
     font-family: "Lato",Lato,"Open Sans";
     font-size: 16px;
-    display: none;
+    display: none;            /* display none */
     
 }
 .index_nav_drop> p> a{
@@ -173,7 +209,7 @@ body {
     margin-right: 20px;
    
 }#index_front_display_button_startinvesting span{ color:white;}
-
+#index_front_display_button_startinvesting:hover{background-color: #19955D;}
 #index_front_display_button_explorestartups{
 font-family: "Open Sans", Lato, "Open Sans";
 font-size: 16px;
@@ -188,7 +224,7 @@ padding: 20px 15px 20px 15px;
 border-radius: 4px;
 
 } #index_front_display_button_explorestartups span{ color:#2EC07A;}
-
+#index_front_display_button_explorestartups span:hover{ color:black;}
 
 #index_element_wrap_statistics{
  margin-top: 20px;
@@ -329,9 +365,15 @@ font-size: 15px;
  border: 1px solid #2EC07A;
  border-radius: 3px;
 } 
+#index_cont_enter_email button:hover{
+    background-color: #19955D;
+}
 input[type="email"]:invalid{
     color:red;
 } 
+#index_email_valid{
+    display:block;
+}
 /* input[type="email" i] {
     padding: 1px 2px;
 }
@@ -543,9 +585,12 @@ flex-basis:auto;
    
 }
 
-
+#index_footer_container{
+    border-top: 1px solid lightgray;
+}
 
 #index_footer_about{
+    width:100%;
     display: flex;
     font-family: Lato, Lato, "Open Sans";
     font-size: 13px;
@@ -583,6 +628,7 @@ flex-basis:auto;
 
 
 #index_important_message{
+    width:100%;
     margin:10%;
     font-family: Lato, Lato, "Open Sans";
     font-size: 13px;

@@ -23,9 +23,12 @@
     </head>
 </head>
 <body>
+
+<div id="index_top_banner"><p>Three companies are now trading on our secondary marketplace! </p></div>
+
     <nav id="nav_cont">
         <div id="nav_logo_div">
-        <a href="../index.html">
+        <a href="./index.html">
           <img id="nav_logo_img" src="./images/StartEngine_nav_logo.png"></div>
         </a>
         <div id="nav_ele">
@@ -34,7 +37,7 @@
             <a id="nav_anchor_fill_startinvesting" href="./pages/start-investing.html"><span>Start Investing</span></a>
         </div>
     </nav>
-    <div class="index_nav_drop classnone"><p>Hello,<span id="drop_username">username</span> </p>
+    <div class="index_nav_drop"><p>Hello,<span id="drop_username">username</span> </p>
            <p onclick="signout()">Sign Out</p></div>
 
     <!-- element -wrap below navigation bar -->
@@ -43,8 +46,8 @@
             <span id="index_front_display_text_green">New on Secondary</span>
             <h1 id="index_front_display_heading">New Companies Are Trading!</h1>
             <p id="index_front_display_text">Three StartEngine alumni have launched on our secondary marketplace. Start trading with other investors now.</p>
-            <button id="index_front_display_button_startinvesting"><span>Start Trading</span> </button>
-            <button id="index_front_display_button_explorestartups"><span>Explore StartUps</span></button>
+            <button id="index_front_display_button_startinvesting" onclick="location.href = './pages/start-investing.html';" ><span>Start Trading</span> </button>
+            <button id="index_front_display_button_explorestartups"  onclick="location.href = './pages/getfunding.html';" ><span>Explore StartUps</span></button>
 
         </div>
 
@@ -81,11 +84,13 @@
  -->   <section id="index_cont_enter_email_section">
        <p><span>Be the first </span>to hear about our investment opportunities when they launch.</p>   
        
-       
+       <form >
        <div id="index_cont_enter_email">  
-           <input type="email" placeholder="Enter Email Address"></input>
-              <button>Submit</button>
+           <input type="email" placeholder="Enter Email Address" required></input>
+              <button id="index_submit_email" onclick="email_success_display(event)">Submit</button>
+              <p id="index_email_valid"></p>
           </div>
+        </form>
    </section>
    
    <div id=index_cont_wrap_be_a_shark>

@@ -247,3 +247,74 @@ form input{
     margin-left:20px;
     margin-top:8px;
 }
+
+
+#body{
+    box-sizing: border-box;
+}
+
+
+
+/* ---------footer------------- */
+#index_footer_container{
+    border-top: 1px solid lightgray;
+}
+#index_important_message{
+    width:100%;
+    box-sizing: border-box;
+   
+    overflow:hidden;
+}
+
+#index_footer_about{
+    width:100%;
+    display: flex;
+    font-family: Lato, Lato, "Open Sans";
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 19.5px;
+    color:  #5B5E6D;      
+}
+#index_footer_about .index_footer_div{
+    
+    margin:1%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+#index_footer_reserved_rights{
+    width:40%;
+    margin: 0;  
+}
+
+.index_footer_div_1{
+    width:20%;
+    padding-left: 10%;
+}
+#index_footer_div_img_logo{
+    margin-top: 15%;
+    max-width:48%;
+}
+.index_footer_div_heading{
+    font-weight: 800;
+    font-size: 16px;
+    color: #212529;
+}
+
+
+#index_important_message{
+    width:100%;
+    margin:10%;
+    font-family: Lato, Lato, "Open Sans";
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 19.5px;
+    color:  #5B5E6D;
+}
+.index_important_message_bold {
+    font-weight: bold;
+    
+}
+.index_important_message_bold a{
+    text-decoration: none;
+ color:#2EC07A;
+}
