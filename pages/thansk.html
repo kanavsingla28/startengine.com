@@ -7,6 +7,7 @@
     <title>Thank u page</title>
     <link rel="stylesheet" href="./../styles/css_funding.css">
     <link rel="stylesheet" href="./../styles/index.css">
+    <script src="./../scripts/index.js"></script>
     
     <style>
         .top{
@@ -37,6 +38,19 @@
     </style>
 </head>
 <body>
+    <nav id="nav_cont">
+        <div id="nav_logo_div">
+        <a href="./index.html">
+          <img id="nav_logo_img" src="./../images/StartEngine_nav_logo.png"></div>
+        </a>
+        <div id="nav_ele">
+            <a id="nav_anchor_Signin" onclick="showdropdown()" href="./../pages/login.html">Sign In</a>
+            <a id="nav_anchor_getfunding" href="./../pages/funding.html">Get Funding</a>
+            <a id="nav_anchor_fill_startinvesting" href="./../pages/start-investing.html"><span>Start Investing</span></a>
+        </div>
+    </nav>
+    <div class="index_nav_drop"><p>Hello, <span id="drop_username">username</span> </p>
+           <p onclick="signout()">Sign Out</p></div>
     <section >
         <div class="top">
         <p>THANK YOU! </p>

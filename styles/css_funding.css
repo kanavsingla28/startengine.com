@@ -2,7 +2,7 @@
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
+  /* position: relative; */
 }
 
 .elementor-button {
@@ -59,7 +59,7 @@
 }
 
 .elementor-icon {
-  position: relative;
+  /* position: relative; */
   margin: auto;
   margin-bottom: 20px;
   color: #2ec07a;
@@ -100,7 +100,7 @@
 }
 .elementor-column,
 .elementor-column-wrap {
-  position: relative;
+  /* position: relative; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
