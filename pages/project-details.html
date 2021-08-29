@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <!--Title name dynamic--> </title>
+    <style>
+        .body{
+            background-color: #fbfefd;
+        }
+        
+    </style>
+    <link href="https://d19j0qt0x55bap.cloudfront.net/production/assets/favicon-79f58af77fc082ce75bd69fc8bdb2dfd.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../styles/project-details-style.css">
+    <link rel="stylesheet" href="./../styles/kanav_common_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="name-details-categories">
+            <div class="display-column">
+                <h3 class="title"></h3>
+                <h4 class="desc project-tagline"></h4>
+            </div>
+        </div>
+        <div class="stats-and-video">
+            <div class="image-div">
+                <div class="video-mobile gce-original-image"></div>
+                <div class="categories">
+                    <div class="site-location">
+                        <div class="website-div">
+                            <i class="fa fa-compass compass"></i>
+                            <a href="#" class="website-link" target="_blank">Website</a> <!--Change href from DB-->
+                        </div>
+                        <div class="location-div">
+                            <i class="fa fa-map-marker map"></i>
+                            <span id="project-location"> <!--Project Location--> </span>
+                        </div>
+                    </div>
+                    <div class="desktop-categories">
+                        <div class="project-category"><i class="fa fa-map-marker map"></i> <!--Here Project Category will be placed--> </div>
+                    </div>
+                </div>
+                <div class="elevator-pitch"></div>
+            </div>
+            <div class="details-div">
+                <div class="offering-stats">
+                    <div class="baseline-flex">
+                        <h2 class="multi-raise-se-number"></h2>
+                        <div class="raised">raised</div>
+                    </div>
+                    <div class="stats-line"></div>
+                    <!-- Row 1/4 of Stats-- Investor Count && Valuation -->
+                    <div class="row">
+                        <div id="investors-num">
+                            <h5></h5>
+                            <h6>Investors</h6>
+                        </div>
+                        <div id="valuation-num">
+                            <h5></h5>
+                            <h6>Valuation</h6>
+                        </div>
+                    </div>
+                    <!-- Row 2/4 of Stats -- Annual Interest Rate for Convertible/PricePerShare && Min. Investment -->
+                    <div class="row">
+                        <div id="price-per-share-num">
+                            <h5></h5>
+                            <h6>Price per Share</h6>
+                        </div>
+                        <div id="min-investment-num">
+                            <h5></h5>
+                            <h6>Min. Investment</h6>
+                        </div>
+                    </div>
+                    <!-- Row 3/4 of Stats -- SecurityName/DiscountRate && OfferingType -->
+                    <div class="row">
+                        <div id="shares-offered-type">
+                            <h5></h5>
+                            <h6>Shared Offered</h6>
+                        </div>
+                        <div id="offering-type-equity">
+                            <h5></h5>
+                            <h6>Offering Type</h6>
+                        </div>
+                    </div>
+                    <!-- Row 4/4 of Stats -- OfferingMax/Maturity & OfferingType/Days Left -->
+                    <div class="row">
+                        <div id="offering-max-num">
+                            <h5></h5>
+                            <h6>Offering Max</h6>
+                        </div>
+                        <div id="offering-type">
+                            <h5></h5>
+                            <h6>Offering</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="invest-or-reserve">
+                    <div class="invest-btn">
+                        <a href="./invest-in-project.html" class="btn invest-now-btn">Invest Now</a>
+                    </div>
+                    <div>
+                        <p class="banner-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let projectDetails = JSON.parse(localStorage.getItem("projectDetails"));
+        document.title = `${projectDetails[0].projectName} | StartEngine `;
+        document.querySelector(".title").textContent = projectDetails[0].projectName;
+        document.querySelector(".project-tagline").textContent = projectDetails[0].tagline;
+        document.querySelector(".gce-original-image").setAttribute("style",`background-image: url(${projectDetails[0].imageLargeURL});`);
+        document.querySelector(".website-link").setAttribute("href",projectDetails[0].websiteLink);
+        document.querySelector("#project-location").textContent = projectDetails[0].location;
+        document.querySelector(".project-category").textContent = projectDetails[0].category;
+        document.querySelector(".elevator-pitch").textContent = projectDetails[0].projectDescription;
+        document.querySelector(".multi-raise-se-number").textContent = projectDetails[0].raisedFull;
+        document.querySelector("#investors-num>h5").textContent = projectDetails[0].investorsFull;
+        document.querySelector("#valuation-num>h5").textContent = projectDetails[0].valuationFull;
+        document.querySelector("#price-per-share-num>h5").textContent = projectDetails[0].pricePerShareFull;
+        document.querySelector("#min-investment-num>h5").textContent = projectDetails[0].minInvestFull;
+        document.querySelector("#shares-offered-type>h5").textContent = projectDetails[0].sharedOfferedFull;
+        document.querySelector("#offering-type-equity>h5").textContent = projectDetails[0].offeringTypeFull;
+        document.querySelector("#offering-max-num>h5").textContent = projectDetails[0].offeringMaxFull;
+        document.querySelector("#offering-type>h5").textContent = projectDetails[0].offeringFull;
+        document.querySelector(".banner-text").textContent = projectDetails[0].belowInvestNowFull;
+
+
+        /*let projectDetails = [{
+            "id": "1001",
+            "links-href": "https://www.startengine.com/a7fl",
+            "projectName": "American 7s Football League (A7FL)",
+            "tagline": "Professional No-Helmets No-Pads",
+            "coverBanner": "Reg CF via StartEngine Capital, LLC",
+            "raisedShort": "$581K",
+            "investorsShort": "774",
+            "minInvestShort": "$375",
+            "imageSmallURL": "https://d19j0qt0x55bap.cloudfront.net/production/startups/589f9a7869adae0a2700007c/images/startup_cover/tombstone_a7fl.jpg",
+            "imageSmallName": "a7fl.jpg",
+            "raisedFull": "$580,711",
+            "investorsFull": "774",
+            "valuationFull": "$9M",
+            "pricePerShareFull": "$1.25",
+            "minInvestFull": "$375.00",
+            "sharedOfferedFull": "Common",
+            "offeringTypeFull": "Equity",
+            "offeringMaxFull": "$1.07M",
+            "offeringFull": "Reg CF",
+            "category": "Film & Video",
+            "location": "Boca Raton, FL",
+            "websiteLink": "https://www.a7fl.com",
+            "projectDescription": "The American 7s Football League has pioneered no-helmets no-pads full contact tackle football. The A7FL’s stripped-down style and high impact highlight videos attract young fans, and our grass roots appeal and safety record have led to expansion teams across the US as well as new media and revenue opportunities.",
+            "belowInvestNowFull": "This Reg CF offering is made available through StartEngine Capital, LLC.",
+            "imageLargeURL": "https://d19j0qt0x55bap.cloudfront.net/production/startups/589f9a7869adae0a2700007c/images/startup_cover/desktop_a7fl.jpg",
+            "progressStatus":"inProgress",
+            "imageLargeName": "desktop_a7fl.jpg"
+        }]
+
+        localStorage.setItem("projectDetails",JSON.stringify(projectDetails));*/
+    </script>
+</body>
+</html>

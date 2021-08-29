@@ -1,0 +1,93 @@
+*{
+    font-family: 'Open Sans';
+}
+.desc {
+    min-height: 27px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    /* color: rgba(3, 18, 11, 0.8); */
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.btn {
+    border: 0;
+    border-radius: 3px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Open Sans';
+    line-height: 13px;
+    padding: 15px 40px;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+.invest-now-btn {
+    background: #20c178;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.text-success {
+    color: #20c178;
+}
+.text-center {
+    text-align: center;
+}
+.cover-banner {
+    /* width: 100%;
+    position: absolute; */
+    z-index: 10;
+    padding: 15px 10px;
+    line-height: 0;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    background-color: rgba(30,30,30,0.6);
+}
+ .tombstone-content {
+    padding: 5px 20px 15px;
+}
+.tombstone .tombstone-content h5 {
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.tombstone-stats .stat>span {
+    font-size: 13px;
+    color: #575757;
+}
+.tagline {
+    font-size: 12px;
+}
+.green-btn{
+    background-color: #20c178;
+}
+
+.green-btn:hover {
+    background-color: #008f4b;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+.white-btn{
+    box-shadow:none;
+    background-color: white;
+    color: #20c178;
+    border: 1px solid #20c178;
+}
+.white-btn:hover {
+    border: 1px solid #20c178;
+    background-color: rgba(32, 193, 120, 0.04);
+}

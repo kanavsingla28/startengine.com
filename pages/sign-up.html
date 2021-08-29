@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartEngine User Management</title>
+    <link rel="stylesheet" href="./../styles/kanav_common_style.css">
+    <link rel="stylesheet" href="./../styles/login.css">
+    <link href="https://d19j0qt0x55bap.cloudfront.net/production/assets/favicon-79f58af77fc082ce75bd69fc8bdb2dfd.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+    <div class="main-div">
+        <div id="content-wrap" class="MuiGrid-root MuiGrid-container">
+            <div class="MuiGrid-left">
+                <div><p>New to StartEngine?</p></div>
+                <div><p class="sign-up-form-fill-text">Please fill out the form to sign up</p></div>
+                <div><img src="https://d19j0qt0x55bap.cloudfront.net/production/assets/loginGraphic.svg"></div>
+            </div>
+            <div class="form-div">
+                <div class="sign-in-options">
+                    <div class="firebaseui-idp-favicon">
+                        <button class="google-btn">
+                            <img class="firebaseui-idp-icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+                            Sign up with Google
+                        </button>
+                    </div>
+                    <div class="firebaseui-idp-favicon">
+                        <button class="fb-btn">
+                            <img class="firebaseui-idp-icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/facebook.svg">
+                            Sign up with Facebook
+                        </button>
+                    </div>
+                    <div class="firebaseui-idp-favicon">
+                        <button class="apple-btn">
+                            <img class="firebaseui-idp-icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/apple.png">
+                            Sign up with Apple
+                        </button>
+                    </div>
+                    <div class="or-div">
+                        <div class="only-line"></div>
+                        <div class="or-text">OR</div>
+                        <div class="only-line"></div>
+                    </div>
+                </div>
+                <div class="email-password-login">
+                    <div><input type="email" id="email" placeholder="Email"></div>
+                    <div><input type="text" id="fName" placeholder="First Name"></div>
+                    <div><input type="text" id="lName" placeholder="Last Name"></div>
+                    <div><input type="password" id="password" placeholder="Password"></div>
+                    <div class="forgot-signup">
+                        <!-- <div class="green-text">Forgot Password?</div> -->
+                        <div class="login"><button onclick="signUp()" id="sign-up-id" class="sign-up-btn green-btn">Sign Up</button></div>
+                    </div>
+                    <!-- <div class="only-line"></div> -->
+                </div>
+                <div class="login-account-div">
+                    <!-- <button class="create-account white-btn">Create Account</button> -->
+                    <p>
+                        Already have an account? 
+                        <a href="./login.html">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./../scripts/login-signup.js"></script>
+</body>
+</html> 
