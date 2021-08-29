@@ -21,9 +21,17 @@ function signUp(){
 
     document.querySelector("#sign-up-id").textContent = "Sign Up Successful...";
 
-    setTimeout(()=>{
-        location.href = "./../index.html";
-    },1500)
+    let pageFrom = JSON.parse(localStorage.getItem("userComingfrom"));
+    if(pageFrom=="projectDetailsPage"){
+        setTimeout(()=>{
+            location.href = "./investment_user_details.html";
+        },1500)
+    }else{
+        setTimeout(()=>{
+            location.href = "./../index.html";
+        },1500)
+    }
+    localStorage.removeItem("userComingfrom");
 }
 //document.querySelector("#sign-up-id").addEventListener('click',signUp);
 
@@ -36,11 +44,20 @@ function logIn(){
     if(checkUserDetails(mailEntered,passEntered)){
         localStorage.setItem("loggedDetails",JSON.stringify([{isLogged:true},userIdforLogin]));
         document.querySelector("#login-btn-id").textContent = "Login Success...";
-        setTimeout(()=>{
-            location.href = "./../index.html";
-        },1500)
+        let pageFrom = JSON.parse(localStorage.getItem("userComingfrom"));
+        if(pageFrom=="projectDetailsPage"){
+            setTimeout(()=>{
+                location.href = "./investment_user_details.html";
+            },1500)
+        }else{
+            setTimeout(()=>{
+                location.href = "./../index.html";
+            },1500)
+        }
+        localStorage.removeItem("userComingfrom");
     }else{
         console.log("User Name not correct");
+        alert("User Id Password does not match !")
     }
 }
 
