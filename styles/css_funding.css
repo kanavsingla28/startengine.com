@@ -1,6 +1,4 @@
 .elementor-section .elementor-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -9,6 +7,7 @@
 
 .elementor-button {
   color: white;
+  word-wrap: break-word;
   text-decoration: inherit;
 }
 #enter_email input {
@@ -36,6 +35,7 @@
   background-color: #2ec07a;
   border-radius: 3px;
   width: 50%;
+  color: white;
   text-align: center;
   margin: auto;
 }
@@ -120,6 +120,9 @@ img[Attributes] {
 * p {
   color: #5b5e6d;
 }
+* h4 {
+  color: #5b5e6d;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -148,18 +151,19 @@ a {
   text-decoration: none;
 }
 .elementor-image {
+  padding: px;
   height: 10%;
   width: 15%;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
 }
 .eled {
   display: flex;
-  float: left;
 }
 
 .ele {
   display: flex;
+  min-width: 100%;
 }
 
 .elementor *,
