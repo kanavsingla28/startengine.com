@@ -65,6 +65,7 @@ function logIn(){
 
 function checkUserDetails(mailEntered,passEntered){
     let allUsers = JSON.parse(localStorage.getItem("allUsers"));
+    if(allUsers==null) return false;
     for(var i=0; i<allUsers.length; i++){
         if(allUsers[i].userEmail==mailEntered && allUsers[i].userPass==passEntered){
             userIdforLogin = allUsers[i];

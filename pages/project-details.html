@@ -135,7 +135,7 @@
         document.title = `${projectDetails[0].projectName} | StartEngine `;
         document.querySelector(".title").textContent = projectDetails[0].projectName;
         document.querySelector(".project-tagline").textContent = projectDetails[0].tagline;
-        document.querySelector(".gce-original-image").setAttribute("style",`background-image: url(${projectDetails[0].imageLargeURL});`);
+        document.querySelector(".gce-original-image").setAttribute("style",`background-image: url(./../images/${projectDetails[0].imageLargeName});`);
         document.querySelector(".website-link").setAttribute("href",projectDetails[0].websiteLink);
         document.querySelector("#project-location").textContent = projectDetails[0].location;
         document.querySelector(".project-category").textContent = projectDetails[0].category;

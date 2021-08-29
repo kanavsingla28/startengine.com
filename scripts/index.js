@@ -16,21 +16,24 @@ function signout(){
          location.href="/index.html";
 
 }
+var user_data= JSON.parse(localStorage.getItem("loggedDetails"));
+if(user_data!=null) check_if_logedin_navbar();
 
 function check_if_logedin_navbar(){
     /*--------get-status------ */
-    console.log(localStorage.getItem("loggedDetails"));
+    //console.log(localStorage.getItem("loggedDetails"));
 
  //   if(thisSession.hasOwnProperty('loggedDetails')){
-   var user_data= JSON.parse(localStorage.getItem("loggedDetails"));
+   //var user_data= JSON.parse(localStorage.getItem("loggedDetails"));
    var status= user_data[0].isLogged;
 
-   console.log(status);
+   //console.log(status);
    /* ------------------- */
 
     if(status===true){
        /* remove anchor tag SignIn and add name*/
 let nav_anchor_Signin=document.getElementById("nav_anchor_Signin");
+console.log(nav_anchor_Signin)
 
      nav_anchor_Signin.innerText=  user_data[1].userFName + " "+user_data[1].userLName;
        nav_anchor_Signin.style.color="#19955D";
@@ -80,4 +83,4 @@ var p=document.querySelector("#index_email_valid");
 p.innerText="Email Registered Successfully!  Thank You  😄";
 e.preventDefault();
 }
-check_if_logedin_navbar();
+

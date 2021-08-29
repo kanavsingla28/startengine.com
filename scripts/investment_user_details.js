@@ -1,4 +1,4 @@
-
+localStorage.removeItem("userComingfrom");
 
 var projectDetails=JSON.parse(localStorage.getItem("projectDetails"));
 
