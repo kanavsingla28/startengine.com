@@ -1,0 +1,207 @@
+.elementor-section .elementor-container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  /* position: relative; */
+}
+
+.elementor-button {
+  color: white;
+  word-wrap: break-word;
+  text-decoration: inherit;
+}
+#enter_email input {
+  line-height: 21px;
+  font-size: 15px;
+  height: 40px;
+  width: 300px;
+}
+#enter_email button {
+  font-family: "Lato", Lato, "Open Sans";
+  margin-left: 0;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 0.2px;
+  line-height: 15px;
+  color: #ffffff;
+  height: 40px;
+  width: 108px;
+  background-color: #2ec07a;
+  border: 3px solid #2ec07a;
+  border-radius: 3px;
+}
+#elementor-button-text {
+  height: 30px;
+  background-color: #2ec07a;
+  border-radius: 3px;
+  width: 50%;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+.border {
+  border: #393939 1px solid;
+}
+.eled {
+  display: flex;
+  flex-direction: row;
+}
+.eled1 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.elementor-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+  align-self: center;
+}
+
+.elementor-icon {
+  /* position: relative; */
+  margin: auto;
+  margin-bottom: 20px;
+  color: #2ec07a;
+  font-size: 30px;
+}
+.elementor *,
+.elementor :after,
+.elementor :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+}
+.elementor-heading-title {
+  color: #2ec07a;
+  font-size: 45px;
+  display: flex;
+  line-height: 1.1em;
+  font-weight: 600;
+}
+.color_o {
+  color: black;
+}
+.elementor-element-populated {
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  padding: 15px 15px 15px 90px;
+  background-image: contain;
+}
+.elementor-column-gap-default
+  > .elementor-row
+  > .elementor-column
+  > .elementor-element-populated {
+  padding: 10px;
+}
+.elementor-column-wrap {
+  width: 100%;
+  display: flex;
+}
+.elementor-column,
+.elementor-column-wrap {
+  /* position: relative; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+  display: flex;
+}
+img[Attributes] {
+  width: 642px;
+  aspect-ratio: auto;
+}
+.color_g {
+  color: #2ec07a;
+}
+* p {
+  color: #5b5e6d;
+}
+* h4 {
+  color: #5b5e6d;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.elementor-widget-image img {
+  vertical-align: middle;
+  display: flex;
+}
+.element-widget-wrap {
+  padding: 5px;
+}
+.elementor-element-populated {
+  margin: 0px 0px 0px 0px;
+  padding: 15px 15px 15px 15px;
+}
+a {
+  text-decoration: none;
+}
+.elementor-image {
+  padding: px;
+  height: 10%;
+  width: 15%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.eled {
+  display: flex;
+}
+
+.ele {
+  display: flex;
+  min-width: 100%;
+}
+
+.elementor *,
+.elementor :after,
+.elementor :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ele {
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #f2f2f2;
+  background-color: #ffffff;
+
+  padding: 10px 10px 10px 10px;
+}
+
+.eled {
+  text-align: left;
+}
+.box_s {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.elementor-row {
+  padding: 2%;
+  margin: 2%;
+}
+#center_block {
+  padding: 5px 300px;
+}
+.bg {
+  background-color: white;
+}
+.ele1 {
+  background-image: url("https://startengine.com/blog/wp-content/uploads/2019/03/PuzzleBackground2.jpg");
+  background-size: contain;
+}
+.ele2 {
+  background-size: contain;
+}
