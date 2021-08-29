@@ -129,7 +129,7 @@ button[type="submit"]:hover{
     color: #313647;
     font-family: "Lato",Lato,"Open Sans";
     font-size: 16px;
-    display: none;            /* display none */
+     display: none;             /* display none */
     
 }
 .index_nav_drop> p> a{

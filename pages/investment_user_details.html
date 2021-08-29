@@ -49,12 +49,12 @@
           <label>Net Worth</label>
           <input type="Number" placeholder="$ Net Worth"></input>
         
-          <button>Continue</button>
+          <!-- <button>Continue</button> -->
         </form>
            <div class="Investment_Line"></div>
             
         <h2 class="heading2 font_heading">2.Contact Information</h2>
-        <p>StartEngine is required by federal law to collect information to help you invest online.</p>
+        <p id="investment_heading2_p">StartEngine is required by federal law to collect information to help you invest online.</p>
            <form id="investment_contact_info_form">
                <label id="fname">Legal First Name</label>
                   &ensp; &ensp; &ensp; &ensp;&ensp; &ensp; &ensp; &ensp;&ensp;&ensp; &ensp;
@@ -315,14 +315,14 @@
     </div>
         <label id="phone">Cell Phone Number</label>
         <input id="input_phone"for="phone"type="tel">
-        <button>Continue</button>
+        <!-- <button>Continue</button> -->
     </form>
         
     <div class="Investment_Line"></div>
 
 
         <h2 class="heading3 font_heading">3.Payment</h2>
-        <form id="payment_form">
+        <form id="payment_form" onsubmit="complete_payment(event)">
         <label for="">Payment Method</label>
         <input type="text">
         <label for="">Name on Card</label>
@@ -338,10 +338,16 @@
         <img src="./../images/amex-logo.svg">
           </div>
         
-          <button type="submit" onclick="complete_payment()">Authorize</button>
+          <button type="submit" >Authorize</button>
         </form>
-        <div class="Investment_Line"></div>
+        
+        
+        <div class="Investment_Line">
+        </div>
+
+
         <h2 class="heading4 font_heading">4.verification</h2>
+        <p id="verification_text">Please wait we will contact you sooner</p>
         <div class="Investment_Line"></div>
         <h2 class="heading5 font_heading">5.review</h2>
         <div class="Investment_Line"></div>

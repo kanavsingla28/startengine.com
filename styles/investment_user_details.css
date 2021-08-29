@@ -125,9 +125,9 @@ margin-top: 100px;
 }
 #investment_data_divs >div{
     margin:5%;                        
-    min-width: 110px;
-    max-width: 110px;
-    height: 100px;
+    min-width: 130px;
+    max-width: 130px;
+    height: 130px;
     box-sizing: border-box;
     border: 2px solid gainsboro;
     
@@ -177,6 +177,10 @@ margin-top: 100px;
      margin-right:23%;
      
 }
+.investment_heading2_p{
+    margin-left:50px;
+}
+
 
 .investment_user_details .heading3{margin-top: 100px;}
 
@@ -208,6 +212,10 @@ form input{
 }
 .investment_image_logo_bank img{max-width:70px;}
 .investment_user_details .heading4{margin-top: 100px;}
+#verification_text{
+    display: none;
+}
+
 .investment_user_details .heading5{margin-top: 100px;}
 
 

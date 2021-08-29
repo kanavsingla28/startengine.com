@@ -32,7 +32,7 @@ function check_if_logedin_navbar(){
        /* remove anchor tag SignIn and add name*/
 let nav_anchor_Signin=document.getElementById("nav_anchor_Signin");
 
-     nav_anchor_Signin.innerText=  user_data[1].userFName + " "+user_data[1].userLName+" Signed In:";
+     nav_anchor_Signin.innerText=  user_data[1].userFName + " "+user_data[1].userLName;
        nav_anchor_Signin.style.color="#19955D";
           document.getElementById('drop_username').innerText=user_data[1].userFName + " "+user_data[1].userLName;
           nav_anchor_Signin.removeAttribute('href');
@@ -47,25 +47,28 @@ function showdropdown(){
     console.log("hello11")
     var get_dropdown=document.querySelector(".index_nav_drop");
     console.log(get_dropdown.classList);
-    console.log('check:1-',get_dropdown.style.display.value);
+    
+   console.log('check:1-',get_dropdown.style.display.value);
 
-  /*  if(get_dropdown.style.display.value===undefined){
+   /* if(get_dropdown.style.display.value==='none'){
     console.log('check:2-',get_dropdown.style.display.value);
     get_dropdown.style.display='block';
    // console.log("setblock");
-   }else if(get_dropdown.style.display==='block'){
+   } else if(get_dropdown.style.display==='block'){
    // console.log("setnone");
     console.log('check:3-',get_dropdown.style.display.value);
     get_dropdown.style.display=='none';
-   } */
-    if(get_dropdown.classList.contains("classdisplay")){
-        console.log("hellloooooo:")
-          get_dropdown.classList.remove('classdisplay');
+   } */ 
+     if(get_dropdown.classList.contains("classdisplay")){
+       console.log("hellloooooo:")
+       get_dropdown.setAttribute('class','index_nav_drop');
         }
-        else{
+        else if(get_dropdown.classList.contains("index_nav_drop")){
+        //get_dropdown.setAttribute('class','classdisplay');
         get_dropdown.setAttribute('class','classdisplay');
+
         console.log("set none");
-    } 
+    }  
    /*  get_dropdown.style.display= 'block';  */
 }
 
