@@ -6,7 +6,6 @@ body{
     max-width:100%;
     text-align: center;
     height: 200px;
-    margin:5% 5%;
     
   
 }
@@ -160,7 +159,7 @@ margin-top: 100px;
     width:40%;
 }
 #investment_contact_info_form>#select_country{
-    height: 22px;
+    height: 65px;
     width:499px;
     font-size: 19px;
     padding:19px 14px 19px 14px;
