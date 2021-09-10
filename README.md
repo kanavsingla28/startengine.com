@@ -73,14 +73,14 @@ What did you learn while building this project? What challenges did you face and
   - 
 ## Acknowledgements
 
-  - [Special thanks to Masai School](https://https://masaischool.com)
+  - [Special thanks to Masai School](https://masaischool.com)
   
   
 ## Team-members/Contributors
 
-- [@carynd](https://www.github.com/carynd)
+- [@carynd](https://github.com/carynd)
 
-- [@abhinavgujral](https://wwww.github.com/abhinavgujral)
+- [@abhinavgujral](https://github.com/abhinavgujral)
 
-- [@kanavsingla28](https://wwww.github.com/kanavsingla28)
+- [@kanavsingla28](https://github.com/kanavsingla28)
   
