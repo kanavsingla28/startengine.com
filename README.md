@@ -70,9 +70,11 @@ What did you learn while building this project? What challenges did you face and
 - Learnings:
   - Project management and Github collaboration workflow.
   - Cloning a website using HTML, CSS, and Javascript
+  - 
 ## Acknowledgements
 
-  - [Special thanks to Masai School](https://https://masaischool.com/)
+  - [Special thanks to Masai School](https://https://masaischool.com)
+  - 
 ## Team-members/Contributors
 
 - [@carynd](https://www.github.com/carynd)
