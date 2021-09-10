@@ -32,15 +32,25 @@ StartEngine is a website that bridges the gap between investors and startups.
   
 ## Screenshots
 - Homepage
+
 ![Project homepage](https://miro.medium.com/max/1000/1*rhWqb3etdnMtXt_M_yqCgA.png)
+
 - SignIn page
+
 ![Project SignIn page](https://miro.medium.com/max/700/1*R78-SjpD8YVTWPUaVq0L4w.png)
+
 - SignUp page
+
 ![Project SignUp page](https://miro.medium.com/max/700/1*WLYGba3UfsewQvaO3kfW5g.png)
+
 - GetFunding page
+
 ![Project GetFunding page](https://miro.medium.com/max/700/1*KgudHeq-zJkMq3lr2-CzAw.png)
+
 - Investor's page
+
 ![Project Investor's page](https://miro.medium.com/max/700/1*jPDsyAXgSPMwNPtPeNHNew.png)
+
 ## Demo
 
 Insert gif or link to demo
