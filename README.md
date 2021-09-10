@@ -1,5 +1,3 @@
-# startengine.com
-This is clone of startengine.com
 
 # StartEngine.com Clone
 
