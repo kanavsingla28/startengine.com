@@ -5,12 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <!--Title name dynamic--> </title>
-    <style>
-        .body{
-            background-color: #fbfefd;
-        }
-        
-    </style>
     <link href="https://d19j0qt0x55bap.cloudfront.net/production/assets/favicon-79f58af77fc082ce75bd69fc8bdb2dfd.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./../styles/project-details-style.css">
@@ -130,74 +124,6 @@
     </div>
 
     <script src="./../scripts/index.js"></script>
-    <script>
-        let projectDetails = JSON.parse(localStorage.getItem("projectDetails"));
-        document.title = `${projectDetails[0].projectName} | StartEngine `;
-        document.querySelector(".title").textContent = projectDetails[0].projectName;
-        document.querySelector(".project-tagline").textContent = projectDetails[0].tagline;
-        document.querySelector(".gce-original-image").setAttribute("style",`background-image: url(./../images/${projectDetails[0].imageLargeName});`);
-        document.querySelector(".website-link").setAttribute("href",projectDetails[0].websiteLink);
-        document.querySelector("#project-location").textContent = projectDetails[0].location;
-        document.querySelector(".project-category").textContent = projectDetails[0].category;
-        document.querySelector(".elevator-pitch").textContent = projectDetails[0].projectDescription;
-        document.querySelector(".multi-raise-se-number").textContent = projectDetails[0].raisedFull;
-        document.querySelector("#investors-num>h5").textContent = projectDetails[0].investorsFull;
-        document.querySelector("#valuation-num>h5").textContent = projectDetails[0].valuationFull;
-        document.querySelector("#price-per-share-num>h5").textContent = projectDetails[0].pricePerShareFull;
-        document.querySelector("#min-investment-num>h5").textContent = projectDetails[0].minInvestFull;
-        document.querySelector("#shares-offered-type>h5").textContent = projectDetails[0].sharedOfferedFull;
-        document.querySelector("#offering-type-equity>h5").textContent = projectDetails[0].offeringTypeFull;
-        document.querySelector("#offering-max-num>h5").textContent = projectDetails[0].offeringMaxFull;
-        document.querySelector("#offering-type>h5").textContent = projectDetails[0].offeringFull;
-        document.querySelector(".banner-text").textContent = projectDetails[0].belowInvestNowFull;
-    
-        
-        document.querySelector(".invest-now-btn").addEventListener('click',setFlowStatus);
-        let isLoggedIn = JSON.parse(localStorage.getItem("loggedDetails"));
-        function setFlowStatus(){
-            localStorage.setItem("userComingfrom",JSON.stringify("projectDetailsPage"));
-            if(isLoggedIn==null || isLoggedIn[0].isLogged==false){
-                location.href = "./login.html";                
-            }else if(isLoggedIn[0].isLogged==true){
-                location.href = "./investment_user_details.html";
-            }
-        }
-
-        
-
-        
-
-        /*let projectDetails = [{
-            "id": "1001",
-            "links-href": "https://www.startengine.com/a7fl",
-            "projectName": "American 7s Football League (A7FL)",
-            "tagline": "Professional No-Helmets No-Pads",
-            "coverBanner": "Reg CF via StartEngine Capital, LLC",
-            "raisedShort": "$581K",
-            "investorsShort": "774",
-            "minInvestShort": "$375",
-            "imageSmallURL": "https://d19j0qt0x55bap.cloudfront.net/production/startups/589f9a7869adae0a2700007c/images/startup_cover/tombstone_a7fl.jpg",
-            "imageSmallName": "a7fl.jpg",
-            "raisedFull": "$580,711",
-            "investorsFull": "774",
-            "valuationFull": "$9M",
-            "pricePerShareFull": "$1.25",
-            "minInvestFull": "$375.00",
-            "sharedOfferedFull": "Common",
-            "offeringTypeFull": "Equity",
-            "offeringMaxFull": "$1.07M",
-            "offeringFull": "Reg CF",
-            "category": "Film & Video",
-            "location": "Boca Raton, FL",
-            "websiteLink": "https://www.a7fl.com",
-            "projectDescription": "The American 7s Football League has pioneered no-helmets no-pads full contact tackle football. The A7FL’s stripped-down style and high impact highlight videos attract young fans, and our grass roots appeal and safety record have led to expansion teams across the US as well as new media and revenue opportunities.",
-            "belowInvestNowFull": "This Reg CF offering is made available through StartEngine Capital, LLC.",
-            "imageLargeURL": "https://d19j0qt0x55bap.cloudfront.net/production/startups/589f9a7869adae0a2700007c/images/startup_cover/desktop_a7fl.jpg",
-            "progressStatus":"inProgress",
-            "imageLargeName": "desktop_a7fl.jpg"
-        }]
-
-        localStorage.setItem("projectDetails",JSON.stringify(projectDetails));*/
-    </script>
+    <script src="./../scripts/project-details.js"></script>
 </body>
 </html>
