@@ -1,4 +1,7 @@
 
+.body{
+    background-color: #fbfefd;
+}
 .title {
     min-height: 30px;
     font-family: 'Lato';
