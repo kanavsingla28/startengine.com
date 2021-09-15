@@ -23,15 +23,18 @@ function check_if_logedin_navbar(){
        
 let nav_anchor_Signin=document.getElementById("nav_anchor_Signin");
 let mini_nav_sigin=document.getElementById("drop_username_mini");
-let index_mini_logout=document.getElementById("index_mini_logout_p");
-index_mini_logout.innerText="Sign Out"
+mini_nav_sigin.innerText=user_data[1].userFName + " "+user_data[1].userLName;
+nav_anchor_Signin.innerText=  user_data[1].userFName + " "+user_data[1].userLName;
+
+document.getElementById('drop_username').innerText=user_data[1].userFName + " "+user_data[1].userLName;
+nav_anchor_Signin.removeAttribute('href');
+mini_nav_sigin.removeAttribute('href');
+
+
+let index_mini_logout=document.querySelector("#index_mini_logout_p");
+
 index_mini_logout.setAttribute("onclick","signout()");
-      mini_nav_sigin.innerText=user_data[1].userFName + " "+user_data[1].userLName;
-     nav_anchor_Signin.innerText=  user_data[1].userFName + " "+user_data[1].userLName;
-     
-          document.getElementById('drop_username').innerText=user_data[1].userFName + " "+user_data[1].userLName;
-          nav_anchor_Signin.removeAttribute('href');
-          mini_nav_sigin.removeAttribute('href');
+index_mini_logout.innerText="Sign Out"
                   
 
    
