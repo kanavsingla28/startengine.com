@@ -1,3 +1,133 @@
+#index_top_banner{
+  max-width:100%;
+  min-height: 5em;
+  background-color: #2EC07A;
+}
+#index_top_banner>p{
+  color:#FFFFFF;
+  font-size:18px;
+  font-family:"Lato", Lato, "Open Sans";
+  margin:auto;
+     padding-top: 10px;
+  text-align: center;
+}
+
+#nav_cont{
+   padding:12px 1.5% 1.5% 12px;
+   max-height: 75px;
+   max-width: 100%;
+   border-bottom: .1rem solid lightgrey;
+   background-color: #FFFFFF;
+   position: sticky;
+   top:0;
+   box-sizing: border-box;
+  overflow: hidden;
+   display: flex;
+}
+   #nav_menu_cont{
+   display: none;
+  
+}
+#nav_logo_img{
+  height: 40px;
+  max-width: 80px;
+  margin-left:3%;
+}
+#nav_ele{
+ font-family:"Lato", Lato, "Open Sans";
+ font-size: 15px;
+ max-height: 60px;
+ width:90%;
+ color:#313647;
+ box-sizing: border-box;
+ display: flex;
+ flex-direction: row-reverse;
+ 
+
+}
+#funding_nav_sigin{
+  width:5%;
+  padding-top: 1%;
+}
+
+
+#nav_anchor_fill_startinvesting {
+  font-family: "Lato", Lato, "Open Sans";                  
+ background-color:   #20C178;  
+ border: 2px solid  #20C178;
+ margin: 0 1.5% 1% 1.5%;
+ padding: 1% 2.7% 2.5% 2.7%;
+ border-radius: 3px;
+ text-decoration: none ;
+ 
+
+ 
+
+ 
+}
+#nav_anchor_fill_startinvesting:hover{
+  background-color: #19955D;
+}
+
+#nav_anchor_fill_startinvesting span{
+  color:white;
+  
+}
+#nav_anchor_getfunding{
+   color:#212529;
+  font-family: "Lato", Lato, "Open Sans";
+  margin: 0 1.5% 1% 1.5%;
+  padding: 1% 2.7% 2.5% 2.7%;
+  text-decoration: none ;
+  border: 2px solid  #20C178;
+  border-radius: 3px;
+  /* float:right; */
+}
+#nav_anchor_getfunding:hover{
+  color: #19955D;
+}
+
+#nav_anchor_Signin{
+  font-family: "Lato", Lato, "Open Sans";
+  color:#212529; 
+  text-decoration: none ;
+  margin: 0 1.5% 1% 1.5%;
+ padding: 1% 2.7% 1% 2.7%;
+  /* float:right; */
+  
+  
+}
+
+#nav_transition {
+display: none;
+}
+
+.index_nav_drop{
+  /* position: absolute;
+    top:10.9rem;
+     left:78%; */     
+  position: sticky;              
+  top:75px; 
+  float:right; 
+  width:300px;
+  background-color: #fff;
+  color: #313647;
+  padding:0 5%;
+  font-family: "Lato",Lato,"Open Sans";
+  font-size: 16px;
+  box-sizing: border-box;
+  display:none;
+}
+
+
+#cont_sigin{
+  padding-top: 0.8%;
+  width:100px;
+}
+
+
+
+/* ------------------------- */
 .elementor-section .elementor-container {
   display: flex;
   margin-right: auto;
@@ -204,4 +334,68 @@ a {
 }
 .ele2 {
   background-size: contain;
+}
+
+
+
+
+#index_footer_container{
+  border-top: 1px solid lightgray;
+  margin-top: 15%;
+}
+
+#index_footer_about{
+  max-width:100%;
+  display: flex;
+  font-family: Lato, Lato, "Open Sans";
+  font-size: 13rpx;
+  letter-spacing: 0.02rem;
+  line-height: 1.95rem;
+  color:  #5B5E6D;      
+}
+#index_footer_about .index_footer_div{
+  
+  margin:1%;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+#index_footer_reserved_rights{
+  max-width:40%;
+  margin: 0;  
+}
+
+.index_footer_div_1{
+  max-width:20%;
+  padding-left: 10%;
+}
+#index_footer_div_img_logo{
+  margin-top: 15%;
+  max-width:48%;
+}
+.index_footer_div_heading{
+  font-weight: 800;
+  font-size: 16px;
+  color: #212529;
+}
+
+
+
+
+
+#index_important_message{
+  max-width:100%;
+  margin:10%;
+  font-family: Lato, Lato, "Open Sans";
+  font-size: 13px;
+  letter-spacing: 0.02rem;
+  line-height: 1.95rem;
+  color:  #5B5E6D;
+}
+.index_important_message_bold {
+  font-weight: bold;
+  
+}
+.index_important_message_bold a{
+  text-decoration: none;
+color:#2EC07A;
 }
