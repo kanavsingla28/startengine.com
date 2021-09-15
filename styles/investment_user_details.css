@@ -19,7 +19,7 @@ body{
    
 }
 #investment_company_div
-{color:#000000DE;
+{  color:#000000DE;
     height: 100px;
     margin:3.5% 2% 3.5% 0;
     width:80%;
@@ -201,8 +201,11 @@ form input{
     height: 24px;
     color: darkslategrey;
     margin-top:30px;
+    margin-right: 6%;
 }
-
+.address_lline_label{
+    display: block;
+}
 
 
 .investment_image_logo_bank{
