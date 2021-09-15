@@ -11,8 +11,8 @@
     <link rel='stylesheet' id='elementor-icons-shared-0-css'  href='https://mk0blogstarteng8gb57.kinstacdn.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' type='text/css' media='all' />
     <link rel='stylesheet' id='elementor-icons-fa-regular-css'  href='https://mk0blogstarteng8gb57.kinstacdn.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3' type='text/css' media='all' />
     <link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='https://mk0blogstarteng8gb57.kinstacdn.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' type='text/css' media='all' />
-    <link rel="stylesheet" href="./../styles/index.css">
-    <script src="./../scripts/index.js"></script>
+    <!-- <link rel="stylesheet" href="./../styles/index.css"> -->
+    
 </head>
 <body>
     <script>
@@ -29,13 +29,26 @@
         </a></div>
         
         <div id="nav_ele">
-            <a onclick="showdropdown()" href="./../pages/login.html"> <span id="nav_anchor_Signin">Sign In</span> </a>
+            <a id="nav_anchor_Signin"onclick="showdropdown()" href="./../pages/login.html">Sign In </a>
             <a id="nav_anchor_getfunding" href="./../pages/funding.html">Get Funding</a>
             <a id="nav_anchor_fill_startinvesting" href="./../pages/start-investing.html"><span>Start Investing</span></a>
         </div>
     </nav>
     <div class="index_nav_drop"><p>Hello, <span id="drop_username">username</span> </p>
            <p onclick="signout()">Sign Out</p></div>
+
+           <div id="nav_transition">
+            <ul>
+               <li> <a id="nav_anchor_fill_startinvesting_transiton" href="./pages/start-investing.html"><span>Start Investing</span></a></li>
+               <li><a id="nav_anchor_getfunding_transition" href="./pages/funding.html">Get Funding</a></li>
+               <li onclick="showdropdown_mini()"><a id="drop_username_mini"   href="./pages/login.html">Sign In</a></li>
+               <li><p  id="index_mini_logout_p"></p></li>
+            </ul>
+        </div>
+    
+
+
+
     <section class="ele">
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-row">
@@ -1002,6 +1015,7 @@
         </div>
     </div>
 </section>
+<script src="./../scripts/index.js"></script>
 <div id="index_footer_container">
 
 

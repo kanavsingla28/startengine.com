@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./../styles/kanav_common_style.css">
     <link rel="stylesheet" href="./../styles/start-investing-style.css">
     <link href="https://d19j0qt0x55bap.cloudfront.net/production/assets/favicon-79f58af77fc082ce75bd69fc8bdb2dfd.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <link rel="stylesheet" href="./../styles/index.css">
+    <!-- <link rel="stylesheet" href="./../styles/index.css"> -->
 </head>
 <body>
     <!-- Nav Bar Start -->
@@ -23,11 +23,23 @@
             <a id="nav_anchor_getfunding" href="./../pages/funding.html">Get Funding</a>
             <a id="nav_anchor_fill_startinvesting" href="./../pages/start-investing.html"><span>Start Investing</span></a>
         </div>
+        <div id="nav_menu_cont" ><img onclick="showtransition()" id="nav_menu_logo"src="../images/menu_black.svg" alt="logo_menu"></div>
     </nav>
     <div class="index_nav_drop">
         <p>Hello,<span id="drop_username">username</span> </p>
         <p onclick="signout()">Sign Out</p>
     </div>
+
+    <div id="nav_transition">
+        <ul>
+           <li> <a id="nav_anchor_fill_startinvesting_transiton" href="./pages/start-investing.html"><span>Start Investing</span></a></li>
+           <li><a id="nav_anchor_getfunding_transition" href="./pages/funding.html">Get Funding</a></li>
+           <li onclick="showdropdown_mini()"><a id="drop_username_mini"   href="./pages/login.html">Sign In</a></li>
+           <li><p  id="index_mini_logout_p"></p></li>
+        </ul>
+    </div>
+
+
     <!-- Nav Bar End -->
 
     <div class="discover-splash">

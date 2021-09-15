@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-        <html lang="en">
+        <html id="html"lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StartEngine: Invest in Startups Online</title>
-<!-- title bar linkage -->
+
 <link href="https://d19j0qt0x55bap.cloudfront.net/production/assets/favicon-79f58af77fc082ce75bd69fc8bdb2dfd.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
 
-    <!--  lato font style link files start-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-     <!--  lato font style link files ends-->
+     
 
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,32 +36,51 @@
         <a href="./index.html">
           <img id="nav_logo_img" src="./images/StartEngine_nav_logo.png"></div>
         </a>
-        <div id="nav_ele">
-            <a id="nav_anchor_Signin" onclick="showdropdown()" href="./pages/login.html">Sign In</a>
+        <div id="nav_ele">        
+            <div id="cont_sigin"onclick="showdropdown()"><a id="nav_anchor_Signin"   href="./pages/login.html">Sign In</a></div>
             <a id="nav_anchor_getfunding" href="./pages/funding.html">Get Funding</a>
             <a id="nav_anchor_fill_startinvesting" href="./pages/start-investing.html"><span>Start Investing</span></a>
         </div>
+       <div id="nav_menu_cont" ><img onclick="showtransition()" id="nav_menu_logo"src="./images/menu_black.svg" alt="logo_menu"></div>
     </nav>
-    <div class="index_nav_drop"><p>Hello, <span id="drop_username">username</span> </p>
-           <p onclick="signout()">Sign Out</p></div>
-
-    <!-- element -wrap below navigation bar -->
-    <div id="index_element_wrap_front_div">
-        <div id="index_front_div_left">
-            <span id="index_front_display_text_green">New on Secondary</span>
-            <h1 id="index_front_display_heading">New Companies Are Trading!</h1>
-            <p id="index_front_display_text">Three StartEngine alumni have launched on our secondary marketplace. Start trading with other investors now.</p>
-            <button id="index_front_display_button_startinvesting" onclick="location.href = './pages/start-investing.html';" ><span>Start Trading</span> </button>
-            <button id="index_front_display_button_explorestartups"  onclick="location.href = './pages/getfunding.html';" ><span>Explore StartUps</span></button>
-
-        </div>
-
-        <img id="index_img_attachment_large" src="./images/hero_image-1024x890-1.png">
+    
+    
+    
+    
+    <div id="nav_transition">
+        <ul>
+           <li> <a id="nav_anchor_fill_startinvesting_transiton" href="./pages/start-investing.html"><span>Start Investing</span></a></li>
+           <li><a id="nav_anchor_getfunding_transition" href="./pages/funding.html">Get Funding</a></li>
+           <li onclick="showdropdown_mini()"><a id="drop_username_mini"   href="./pages/login.html">Sign In</a></li>
+           <li><p  id="index_mini_logout_p"></p></li>
+        </ul>
     </div>
 
 
 
-    <!-- div containing statistics of investors, raised,funded -->
+
+    <div class="index_nav_drop"><p>Hello, <span id="drop_username">username</span> </p>
+           <p onclick="signout()">Sign Out</p></div>
+
+   
+    <div id="index_element_wrap_front_div">
+        <div id="index_front_div_left">
+           <div id="index_front_div"> <span id="index_front_display_text_green">New on Secondary</span>
+            <h1 id="index_front_display_heading">New Companies Are Trading!</h1>
+            <p id="index_front_display_text">Three StartEngine alumni have launched on our secondary marketplace. Start trading with other investors now.</p>
+        </div>
+            <div id="index_front_div_button">  <button id="index_front_display_button_startinvesting" onclick="location.href = './pages/start-investing.html';" ><span>Start Trading</span> </button>
+            <button id="index_front_display_button_explorestartups"  onclick="location.href = './pages/getfunding.html';" ><span>Explore StartUps</span></button>
+        </div>
+        </div>
+        <img id="index_img_attachment_large" src="./images/hero_image-1024x890-1.png">
+       
+       
+    </div>
+
+
+
+    
     <div id="index_element_wrap_statistics">
         <div class="index_stat_cont" >
             <h2 class="index_stat_heading">500K</h2>
@@ -77,17 +95,7 @@
     </div>
 
 
-<!-- 
-     Div heading Now Trading  
-    <h2 id="index_heading_for_container_wrap">Now Trading</h2>
-    <h2 id="index_heading_for_container_wrap">Signed To Trade On StartEngine’s Secondary Market</h2>
-    <h2 id="index_heading_for_container_wrap">Most Momentum</h2>
-    <h2 id="index_heading_for_container_wrap">Most Popular</h2>
-    <h2 id="index_heading_for_container_wrap">New</h2>
-    <h2 id="index_heading_for_container_wrap">Closing Soon</h2>
-   <button id="index_btn_see_all_companies"><span>See All Companies</span></button>
-      
- -->   <section id="index_cont_enter_email_section">
+   <section id="index_cont_enter_email_section">
        <p><span>Be the first </span>to hear about our investment opportunities when they launch.</p>   
        
        <form >
@@ -130,10 +138,10 @@
     </div>
     
     
+    
+    
+    <h2 id="index_card_heading_success_stories">Success Stories</h2>
     <div id="index_cont_success_stories">
-        
-
-
         <div class="index_card_success_stories">
             <img class ="index_success_stories_picture"src="images/Knightscope_Startengine_success_story.png">
             <img class="index_logo" src="./images/KnightScope_logo.png"> 
@@ -146,7 +154,7 @@
          </div>
 
          <div class="index_card_success_stories">
-            <h2 id="index_card_heading_success_stories">Success Stories</h2>
+           
              <img class ="index_success_stories_picture"src="images/FarmOne_Hero.png">
             <img class="index_logo"src="./images/Farm_One_Logo.png"> 
             <h2>Farm.One</h2>
@@ -173,7 +181,7 @@
     </div>
 
 
-    <!-- Slider -->
+
     
     <div id="index_cont_slider">
         <div class=slides>
